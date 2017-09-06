@@ -10,4 +10,7 @@ after_success:
 - |
   [ "${TRAVIS_BRANCH}" == "master" ] && [ "$TRAVIS_EVENT_TYPE" != "cron" ] &&
     (make release DOCKER_USER=$DOCKER_USER DOCKER_PASS=$DOCKER_PASS)
-
+notifications:
+  slack:
+    rooms:
+      secure: g/yv8i0douL+gTHE5clyLCK1mRHFyJJUA//c5CUQn/mHAe8zVFkNKSQiVNLuDSt/N8u7npICbhTcxDipHNCqpwF4yZsyMTJ6iskHEWewajyjsynqlqNnWPjKLRvCUSNR/HlwkNJhZbtq+cvLu+S132K82wSZeHulG6XaZ/d3XUnLy4r4MR8yKLKCmjxMq0jUTE23Z3rQvK2i7MnahCWXB/uKEMmwxjbiOVPwZtoAefbyoKQTeIAYrTkirMg30ChQx4/JUQ77ObVTeymndlBIMA3/CNjV7Ue9s+bMbd4I2YtqCy1VGc5nF+Tj7DMGd/soiTQ7b++1b0WlILxPoLJRP9nUeni+GMhQmUhhuu5IxEKyHJMaPgsyC7Em3cQeHSbOXLVcPOB4qMVciaR/dPmIoiRaej1VtuL9xbDRdsXcghz6zhP58e3JDEV/QYuw1lb1A0vGx/65dc5Da5n/Shqnk1zvqSNlxlRM7ZmYQnKN12OLfGZIdJlJAeQ5EJs1brZT8H4yoQrxbLRrapEMB9Z6tTRBZgrniAI2G/seqKlroeuQF0a5vjpCtVZJy3k9F1GdIaGrA7wGHpzRILpFY+gMoBldtFyuKug/SVC6Mwh8sNJzwF4S0BEi5RHDpJoSba26z26cUy4YjkWnk/Pks6fZOkX9O6P5vcMqlg3Ypirps44=
