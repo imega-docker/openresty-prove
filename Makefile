@@ -1,4 +1,4 @@
-TAG = 0.0.1
+TAG = 0.0.2
 
 build:
 	@docker build -t imega/openresty-prove:$(TAG) .
