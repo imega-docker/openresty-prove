@@ -11,4 +11,5 @@ RUN luarocks install lua-resty-validation  && \
 
 ENV PATH="/usr/local/openresty/nginx/sbin:${PATH}"
 
+
 ENTRYPOINT prove
